@@ -4,12 +4,12 @@ class MyList
   include MyEnumerable
 
   def initialize(*array)
-    @array = array #[1,2,3,4]
+    @array = array
   end
 
   def each
     i = 0
-    while @array[i]  #while this is true (exist) do it ...
+    while @array[i]
       yield
       i += 1
     end
